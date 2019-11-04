@@ -1,4 +1,4 @@
-package tree;
+package com.java.concepts.tree;
 
 public class BinarySearchTreeTraversal {
 

@@ -1,4 +1,4 @@
-package testexecption;
+package com.java.concepts.execption;
 
 public class TestExecption {
 
