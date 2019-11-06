@@ -61,6 +61,22 @@ public class LinkedList {
 		
 	}
 	
+	public void reverse() {
+		Node  pointer= head;
+		Node  previous= null, current = null;
+		
+		while(pointer!=null) {
+			current = pointer;
+			pointer= current.next;
+			
+			//reverse the list
+			current.next = previous;
+			previous = current;
+			head = current;
+		}
+		
+	}
+	
 	public boolean detectLoop() {
 		HashSet<Node> hashSet= new HashSet<Node>();
 		Node node = head;

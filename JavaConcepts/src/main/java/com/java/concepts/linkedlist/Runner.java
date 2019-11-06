@@ -11,6 +11,8 @@ public class Runner {
 		list.insert(51);
 		list.insertAtStart(88);
 		list.insertAt(0, 10);
+		list.display();
+		list.reverse();
 		//list.deleteAt(2);	
 		//list.insertAt(2, 10);
 		//list.head.next.next.next.next.next.next.next=list.head;
