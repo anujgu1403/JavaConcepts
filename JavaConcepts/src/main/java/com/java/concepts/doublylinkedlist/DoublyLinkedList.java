@@ -106,7 +106,7 @@ public class DoublyLinkedList {
 	public void printDublyList() {
 
 		Node lastNode = head;
-		
+
 		System.out.println("Forward direction traversal");
 		while (head != null) {
 			System.out.print(head.data + " ");
@@ -118,11 +118,44 @@ public class DoublyLinkedList {
 		while (lastNode.next != null) {
 			lastNode = lastNode.next;
 		}
-		
+
 		// Start traversal from last
-		while(lastNode!=null) {			
+		while (lastNode != null) {
 			System.out.print(lastNode.data + " ");
 			lastNode = lastNode.prev;
 		}
+	}
+
+	public void deleteNodeAt(int position) {
+		// 1. head is null
+		if (head == null) {
+			return;
+		}
+
+		// 2. to delete at 1st position
+		if (position == 1) {
+			if (head.next != null) {
+				head.next.prev = null;
+				return;
+			}
+		}
+
+		// 3. to delete node apart from start or end
+		Node node = head;
+		while (node != null && position > 1) {
+			node = node.next;
+			position--;
+		}
+		
+		if (node == null) {
+			System.out.println("Node doesn't exists at given position.");
+			return;
+		}
+		
+		if (node.next != null) {
+			node.next.prev = node.prev;
+
+		}
+		node.prev.next = node.next;
 	}
 }

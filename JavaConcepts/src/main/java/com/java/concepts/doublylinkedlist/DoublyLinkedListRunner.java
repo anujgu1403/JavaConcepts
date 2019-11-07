@@ -9,6 +9,10 @@ public class DoublyLinkedListRunner {
 		list.pushAtStart(71);
 		list.pushAtStart(13);
 		list.pushAtStart(51);
+		list.deleteNodeAt(8);
+		
 		list.printDublyList();
+		
+		
 	}
 }
