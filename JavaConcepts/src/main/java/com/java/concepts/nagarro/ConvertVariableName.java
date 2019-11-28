@@ -7,18 +7,18 @@ public class ConvertVariableName {
 
 	
 	public static void main(String[] args) {
-		System.out.println(convertString("new_Star_result_bo"));
+		System.out.println(convertString("newStarResultFile"));
 	}
 
 	public static String convertString(String value){
 	    String result="";
 	    if (value.contains("_")){
 	        result=value;
-	        String regex = "\\_([a-z])";
+	        String regex = "\\_([a-z,A-Z])";
 	        Pattern pattern = Pattern.compile(regex);
 	        Matcher matcher = pattern.matcher(result);
 	        while (matcher.find()) {
-	            result = result.replaceFirst(matcher.group(), matcher.group(1).toUpperCase());
+	            result = result.replaceFirst(matcher.group(0), matcher.group(1).toUpperCase());
 	        }
 	        return result;
 	    }else {
