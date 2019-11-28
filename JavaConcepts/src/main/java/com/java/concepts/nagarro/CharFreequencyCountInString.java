@@ -6,21 +6,26 @@ public class CharFreequencyCountInString {
 		int size = 26;
 		int[] charArray = new int[size];
 		for (int i = 0; i < input.length(); i++) {
-			charArray[input.charAt(i) - 'a']++;
+			charArray[input.charAt(i)]++;
 		}
 
-		for (int i = 0; i < input.length(); i++) {
-			if (charArray[input.charAt(i) - 'a'] != 0) {
-
-				System.out.print(input.charAt(i));
-				System.out.println();
+		int first = 0, secound = 0;
+		for (int i = 0; i < size; i++) {
+			if(charArray[first]<charArray[i]) {
+				secound= first;
+				first=i;
+			}else if (charArray[i]>charArray[secound] && charArray[i]<charArray[first]) {
+				secound = i; 
 			}
 		}
+		System.out.println("2nd largest freequency: "+charArray[secound]);
 
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		CharFreequencyCountInString obj = new CharFreequencyCountInString();
+		obj.countAndPrintCharFrequency("fafsdkjfhaksdfbnbnnnnn");
 
 	}
 
