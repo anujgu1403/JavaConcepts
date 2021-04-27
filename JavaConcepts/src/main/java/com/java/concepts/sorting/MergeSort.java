@@ -1,5 +1,8 @@
 package com.java.concepts.sorting;
 
+
+//Time complexity of Merge Sort is O(n*Log n) in all the 3 cases (worst, average and best) as merge sort always divides the array in two halves and takes linear time to merge two halves.
+//It requires equal amount of additional space as the unsorted array. O(n)
 public class MergeSort {
 
 	int[] array;

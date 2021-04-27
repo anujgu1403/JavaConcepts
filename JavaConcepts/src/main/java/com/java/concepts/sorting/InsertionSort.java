@@ -1,5 +1,8 @@
 package com.java.concepts.sorting;
 
+//time complexity of O(n²) in the average and worst case, and O(n) in the best case.
+//For very small n, Insertion Sort is faster than more efficient algorithms such as Quicksort or Merge Sort
+//Space complexity: O(1)
 public class InsertionSort {
 
 	public static void insertionSort(int a[]) {
@@ -20,7 +23,7 @@ public class InsertionSort {
 	}
 
 	public static void main(String[] args) {
-		int a[] = { 12, 1, 43, 12, 49, 30 };
+		int a[] = { 12, 1, 43 };
 		insertionSort(a);
 	}
 

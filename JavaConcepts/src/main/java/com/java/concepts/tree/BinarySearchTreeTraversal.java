@@ -43,7 +43,7 @@ public class BinarySearchTreeTraversal {
 		preOrderTraversal(bst.root);
 		System.out.println("\n Inorder");
 		inOrderTraversal(bst.root);
-		System.out.println("\n Inorder");
+		System.out.println("\n Postorder");
 		postOrderTraversal(bst.root);
 		
 		System.out.println("\n Search node");

@@ -1,5 +1,7 @@
 package com.java.concepts.sorting;
 
+//The time complexity for selection sort is O(n^2) in all three cases
+//Space complexity: O(1)
 public class SelectionSort {
 
 	public static void insertionSort(int a[]) {

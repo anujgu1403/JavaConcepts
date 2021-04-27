@@ -13,7 +13,7 @@ public class Runner {
 		list.insertAt(0, 10);
 		list.display();
 		list.reverse();
-		//list.deleteAt(2);	
+		list.deleteAt(4);
 		//list.insertAt(2, 10);
 		//list.head.next.next.next.next.next.next.next=list.head;
 		

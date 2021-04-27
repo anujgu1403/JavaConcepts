@@ -14,7 +14,7 @@ public class StreamAPI {
 		List<String> cardsList = Arrays.asList("Visa", "Amex", "Rupey", "Mastercard", "Visa");
 		Map<String, Integer> cardsMap = cardsList.stream()
 				.collect(Collectors.toMap(Function.identity(), String::length, (t1, t2) -> t1, LinkedHashMap::new));
-		System.out.println("cardsMap: " + cardsMap.values());
+		System.out.println("cardsMap: " + cardsMap);
 		
 		
 		List<Book> bookList= new ArrayList<Book>();
@@ -24,7 +24,7 @@ public class StreamAPI {
 		bookList.add(new Book(4,"Manoj"));
 		bookList.add(new Book(5,"Raksham"));
 		
-		Map<Integer, Book> bookMap = bookList.stream().filter(book->book.getISBN()>3).collect(Collectors.toMap(book->book.getISBN(), book->book));
+		Map<Integer, Book> bookMap = bookList.stream().filter(book->book.getISBN()>3).collect(Collectors.toMap(Book::getISBN, book->book));
 		System.out.println(bookMap.values());
 
 	}
