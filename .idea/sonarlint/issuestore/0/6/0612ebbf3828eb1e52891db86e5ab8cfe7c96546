@@ -1,0 +1,10 @@
+
+C
+java:S1481	"(Remove this unused "obj" local variable.(úÉ¼¡úÿÿÿÿ
+Z	java:S112
+"FDefine and throw a dedicated exception instead of using a generic one.(‰Æáe
+M
+java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ
+R
+java:S1854	"7Remove this useless assignment to local variable "obj".(úÉ¼¡úÿÿÿÿ
+`	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(¯åÕøÿÿÿÿ

@@ -1,0 +1,14 @@
+
+K
+java:S1066‰"/Merge this if statement with the enclosing one.(­ÊÙŸøÿÿÿÿ
+\
+java:S2259$"FA "NullPointerException" could be thrown; "prevNode" is nullable here.(½ã­Ü
+a
+java:S2259v"FA "NullPointerException" could be thrown; "lastNode" is nullable here.(•¨ı‡øÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ùÄ³ÿÿÿÿÿ
+S	java:S106R"9Replace this use of System.out or System.err by a logger.(èïÉóøÿÿÿÿ
+S	java:S106n"9Replace this use of System.out or System.err by a logger.(ëÁÏüÿÿÿÿ
+S	java:S106p"9Replace this use of System.out or System.err by a logger.(ìé•±ùÿÿÿÿ
+N	java:S106t"9Replace this use of System.out or System.err by a logger.(ÅÎİÑ
+N	java:S106|"9Replace this use of System.out or System.err by a logger.(’ÄÙ˜
+T	java:S106—"9Replace this use of System.out or System.err by a logger.(¬í¯õøÿÿÿÿ

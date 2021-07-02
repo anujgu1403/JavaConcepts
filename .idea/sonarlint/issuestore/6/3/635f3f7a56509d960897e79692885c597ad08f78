@@ -1,0 +1,12 @@
+
+L
+java:S1854"6Remove this useless assignment to local variable "e1".(È ±î
+o
+java:S2293
+"YReplace the type specification in this constructor call with the diamond operator ("<>").(â’‰Œ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¨«¬è
+j
+java:S1215"TDon't try to be smarter than the JVM, remove this call to run the garbage collector.(Ì°¬“
+S	java:S106"9Replace this use of System.out or System.err by a logger.(çĞÕúÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(­ı¦Ûøÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(– ÏÌøÿÿÿÿ
