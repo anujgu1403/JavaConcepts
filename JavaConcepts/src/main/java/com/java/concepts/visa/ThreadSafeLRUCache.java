@@ -128,7 +128,7 @@ public class ThreadSafeLRUCache<K, V> {
         cache.put("5", "Intern");
         cache.put("6", "Co-op");
         System.out.println(cache.get("1"));
-        System.out.println(cache.get("2"));
+        System.out.println(cache.get("6"));
         System.out.println(cache.tail.prev.value);
         System.out.println(cache.head.next.value);
     }
