@@ -6,6 +6,7 @@ public class CustomArrayList{
     private int currentIndex = 0;
 
     CustomArrayList(int size){
+        this.size = size;
         array= new Object[size];
     }
 
@@ -33,5 +34,6 @@ public class CustomArrayList{
         customArrayList.add(20);
         customArrayList.add(30);
         System.out.println(customArrayList.get(2));
+        System.out.println(customArrayList.size);
     }
 }
